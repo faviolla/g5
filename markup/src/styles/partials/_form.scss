@@ -1,0 +1,104 @@
+button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
+input {
+  appearance: none;
+  font-family: $ftFiraSans;
+  &[type="password"] {
+    // font-size: 20px;
+    color: var(--font-color);
+  }
+}
+.btn {
+  font-family: $ftFiraSans;
+  transition: all 0.3s;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 12px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0;
+  border-radius: 40px;
+  &-primary {
+    background: var(--btn-color);
+    color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+    &:hover {
+      background-color: var(--btn-hover);
+      opacity: 1;
+    }
+  }
+  &-play {
+    background: url("../img/btn-play.png") no-repeat;
+    background-size: cover;
+    width: 265px;
+    height: 64px;
+    color: var(--white);
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: bold;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 1);
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.64);
+    border-radius: 20px;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+.input {
+  font: 500 16px/20px $ftNotoSans;
+  color: var(--font-color);
+  background-color: var(--bg-input);
+  border: 1px solid var(--bg-input);
+  border-radius: 40px;
+  padding: 12px 24px;
+  height: 48px;
+  width: 100%;
+  box-shadow: inset -1px -4px 4px rgba(255, 255, 255, 0.86), inset 1px 3px 6px rgba(76, 64, 49, 0.22);
+  &-holder {
+    position: relative;
+    width: 100%;
+  }
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
+  }
+  &::placeholder {
+    opacity: .64;
+    color: var(--font-color);
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 11px 43px;
+    &-primary {
+      box-shadow: none;
+    }
+    &-play {
+      width: 302px;
+      height: 73px;
+      font-size: 36px;
+      line-height: 48px;
+    }
+  }
+  .input {
+    font-size: 18px;
+    line-height: 28px;
+    height: 60px;
+    padding: 16px 28px;
+  }
+}
+@media (min-width: 1440px) {
+}

@@ -1,0 +1,146 @@
+.footer {
+  background: url("../img/bg-footer.jpg") no-repeat 75% 0;
+  background-size: cover;
+  padding: 40px 0 24px;
+  color: var(--white);
+  text-align: center;
+  border-radius: 40px 40px 0 0;
+  overflow: hidden;
+  // margin: -40px 0 0;
+  position: relative;
+  z-index: 3;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 354px;
+    background: linear-gradient(to bottom, rgba(100, 39, 15, 0) 0%, rgba(100, 39, 15, 0) 12%, rgba(100, 39, 15, 1) 100%);
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  a {
+    color: var(--white);
+    &:hover {
+      text-shadow: 0 2px 2px #000;
+    }
+  }
+  &-title {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: bold;
+    margin: 0 0 20px;
+  }
+  &-description {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 0 16px;
+  }
+  &-socials {
+    margin: 0 0 32px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      i {
+        transition: all .3s ease;
+      }
+      &:hover {
+        i {
+          background-color: var(--btn-color);
+        }
+      }
+    }
+  }
+  &-subscribe {
+    margin: 0 0 40px;
+    .input {
+      margin: 0 0 8px;
+    }
+    .btn {
+      width: 100%;
+      font-family: $ftPoppips;
+    }
+  }
+  &-links {
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    span {
+      display: block;
+    }
+    &__group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 32px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    text-align: left;
+    padding: 80px 0 40px;
+    background-position: 81% 0;
+    &:after {
+      height: 160px;
+    }
+    &-socials {
+      justify-content: flex-start;
+      gap: 0 50px;
+      margin: 0 0 20px;
+    }
+    &-subscribe {
+      margin: 0 0 86px;
+      .input {
+        height: 60px;
+        margin: 0;
+        padding-right: 200px;
+        &-holder {
+          position: relative;
+        }
+      }
+      .btn {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        bottom: 3px;
+        width: auto;
+      }
+    }
+    &-links {
+      gap: 14px;
+      &__group {
+        gap: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .footer {
+    background-position: 0 100%;
+    &-title {
+      font-size: 55px;
+      line-height: 66px;
+      margin: 0 0 24px;
+    }
+    &-description {
+      margin: 0 0 20px;
+    }
+    &-socials {
+      gap: 0 56px;
+      margin: 0 0 24px;
+    }
+    &-subscribe {
+      margin: 0 0 56px;
+    }
+  }
+}

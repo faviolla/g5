@@ -1,0 +1,40 @@
+i[class^="icon-"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.icon {
+  &-fb {
+    mask-image: url("../img/icons/socials/fb.svg");
+    width: 43px;
+    height: 44px;
+    background-color: var(--white);
+  }
+  &-tw {
+    mask-image: url("../img/icons/socials/tw.svg");
+    width: 46px;
+    height: 37px;
+    background-color: var(--white);
+  }
+  &-yt {
+    mask-image: url("../img/icons/socials/yt.svg");
+    width: 50px;
+    height: 35px;
+    background-color: var(--white);
+  }
+  &-in {
+    mask-image: url("../img/icons/socials/in.svg");
+    width: 42px;
+    height: 44px;
+    background-color: var(--white);
+  }
+
+  &-close-white {
+    background-image: url("../img/icons/burger-close.svg");
+    width: 24px;
+    height: 24px;
+  }
+}

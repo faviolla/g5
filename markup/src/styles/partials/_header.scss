@@ -1,0 +1,166 @@
+.header {
+  width: 100%;
+  background: url("../img/Back_Canada_2048.jpg") no-repeat 50% 0;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 471px;
+  flex-shrink: 0;
+  padding: 20px 0 60px;
+  .container {
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .btn {
+    margin: 0 0 16px;
+  }
+  &:after {
+    content: "";
+    height: 214px;
+    position: absolute;
+    left: 0;
+    bottom: -102px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(8, 36, 19, 1) 100%);
+  }
+}
+.logo {
+  margin: 0 auto;
+  width: 170px;
+  height: 79px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  animation: bounce 2s ease 0s 1 normal forwards;
+  a {
+    display: block;
+    height: 100%;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+@keyframes bounce {
+  0% {
+    top: -350px;
+    animation-timing-function: ease-in;
+  }
+  40% {
+    top: -24px;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    top: -12px;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    top: -6px;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    top: -4px;
+    animation-timing-function: ease-in;
+  }
+  25%,
+	55%,
+	75%,
+	87% {
+    top: 0;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    top: 0;
+    animation-timing-function: ease-out;
+  }
+}
+.game-description {
+  color: var(--white);
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 500;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
+}
+.img {
+  &-r {
+    position: absolute;
+    right: -20px;
+    bottom: 128px;
+    width: 229px;
+    z-index: 1;
+  }
+  &-l {
+    position: absolute;
+    left: -54px;
+    bottom: 9px;
+    z-index: 1;
+    width: 271px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 40px 0 80px;
+    height: 507px;
+    .btn {
+      margin: 0 0 36px;
+      border-radius: 24px;
+    }
+  }
+  .logo {
+    width: 268px;
+    height: 125px;
+  }
+  .game-description {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .img-l {
+    width: 315px;
+    left: -28px;
+    bottom: -2px;
+  }
+  .img-r {
+    width: 303px;
+    right: 6px;
+    bottom: 122px;
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    padding: 58px 0 104px;
+    height: 711px;
+    .btn {
+      margin: 0 0 56px;
+      width: 413px;
+      height: 100px;
+      font-size: 44px;
+      line-height: 48px;
+      border-radius: 30px;
+    }
+  }
+  .logo {
+    width: 401px;
+    height: 200px;
+  }
+  .game-description {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .img-l {
+    width: auto;
+    left: 48px;
+    bottom: -22px;
+  }
+  .img-r {
+    width: auto;
+    right: 48px;
+    bottom: 126px;
+  }
+}
