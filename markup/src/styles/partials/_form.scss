@@ -35,7 +35,7 @@ input {
     }
   }
   &-play {
-    background: url("../img/btn-play.png") no-repeat;
+    background: #fa8000 url("../img/btn-play.png") no-repeat;
     background-size: cover;
     width: 265px;
     height: 64px;
@@ -73,7 +73,7 @@ input {
     }
   }
   &::placeholder {
-    opacity: .64;
+    opacity: 0.64;
     color: var(--font-color);
   }
 }

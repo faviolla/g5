@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background: url("../img/Back_Canada_2048.jpg") no-repeat 50% 0;
+  background: #9fcde5 url("../img/Back_Canada_2048.jpg") no-repeat 50% 0;
   background-size: cover;
   text-align: center;
   position: relative;
@@ -69,9 +69,9 @@
     animation-timing-function: ease-in;
   }
   25%,
-	55%,
-	75%,
-	87% {
+  55%,
+  75%,
+  87% {
     top: 0;
     animation-timing-function: ease-out;
   }
