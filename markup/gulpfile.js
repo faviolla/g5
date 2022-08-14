@@ -114,14 +114,8 @@ function watch() {
   gulp.watch(path.watch.style, styles);
 }
 
-/*
- * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
- */
 var build = gulp.parallel(html, js, img, fonts, styles, watch);
 
-/*
- * You can use CommonJS `exports` module notation to declare tasks
- */
 exports.html = html;
 exports.js = js;
 exports.img = img;
@@ -129,7 +123,4 @@ exports.fonts = fonts;
 exports.styles = styles;
 exports.watch = watch;
 exports.build = build;
-/*
- * Define default task that can be called by just running `gulp` from cli
- */
 exports.default = build;

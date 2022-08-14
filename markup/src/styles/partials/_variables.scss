@@ -10,9 +10,3 @@
 $ftFiraSans: "Fira Sans", sans-serif;
 $ftNotoSans: "Noto Sans", sans-serif;
 $ftPoppips: "Poppins", sans-serif;
-
-@mixin selectIcon {
-  border-style: solid;
-  border-width: 6px 4px 0 4px;
-  border-color: var(--link-color) transparent transparent transparent;
-}

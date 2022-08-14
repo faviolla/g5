@@ -6,10 +6,6 @@ button {
 input {
   appearance: none;
   font-family: $ftFiraSans;
-  &[type="password"] {
-    // font-size: 20px;
-    color: var(--font-color);
-  }
 }
 .btn {
   font-family: $ftFiraSans;
@@ -99,6 +95,4 @@ input {
     height: 60px;
     padding: 16px 28px;
   }
-}
-@media (min-width: 1440px) {
 }
